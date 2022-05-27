@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Pagina sencilla</title>
+</head>
+<body>
+    <h1>Operaciones basicas</h1>
+
+    <p>numero 1: <input type="number" id = "id1" name=" caja1"></p>  
+    <br><br>
+    <p>numero 2: <input type="number" id = "id2" name=" caja2"></p>
+    <br><br>
+    <p>resultado: <output type="text" id= "id3" name= "resultado" ></output></p>
+    <br><br>
+    <button onclick="suma()"> Suma </button>
+    <button onclick="resta()"> Resta </button>
+    <button onclick="multiplicacion()"> multiplicacion </button>
+    <button onclick="division()"> division </button>
+
+    <script type = "text/JavaScript">
+        function suma(){
+            let id1 = document.getElementById("id1").value;
+            let id2 = document.getElementById("id2").value;
+            let id3 = document.getElementById("id3")
+            if (id1 == "" || id2 == "") {
+                console.log("Ingrese un valor")
+            }
+            else{
+                var numero1 = id1;
+                 var numero2 = id2
+                console.log(numero1 + " + " +  numero2)
+                let resultado = numero1 + numero2
+                console.log(resultado)
+                document.getElementById("id3").value = resultado;
+
+            }
+        }
+        function resta(){
+            let id1 = document.getElementById("id1").value;
+            let id2 = document.getElementById("id2").value;
+            let id3 = document.getElementById("id3").value;
+            
+            if (id1 == "" || id2 == "") {
+                console.log("Ingrese un valor")
+            }
+            else{
+                var numero1 = id1;
+                 var numero2 = id2
+                console.log(numero1 +" - " +  numero2)
+                let resultado = numero1 - numero2
+                console.log(resultado)
+                document.getElementById("id3").value = resultado;
+
+            }
+        }
+        function multiplicacion(){
+            let id1 = document.getElementById("id1").value;
+            let id2 = document.getElementById("id2").value;
+            let id3 = document.getElementById("id3")
+            if (id1 == "" || id2 == "") {
+                console.log("Ingrese un valor")
+            }
+            else{
+                var numero1 = id1;
+                 var numero2 = id2
+                console.log(numero1 +" * " +  numero2)
+                let resultado = numero1 * numero2
+                console.log(resultado)
+                document.getElementById("id3").value = resultado;
+
+            }
+        }
+        function division(){
+            let id1 = document.getElementById("id1").value;
+            let id2 = document.getElementById("id2").value;
+            let id3 = document.getElementById("id3")
+            if (id1 == "" || id2 == "") {
+                console.log("Ingrese un valor")
+            }
+            else{
+                var numero1 = id1;
+                 var numero2 = id2
+                console.log(numero1 + " / "+  numero2)
+                let resultado = numero1 / numero2
+                console.log(resultado)
+                document.getElementById("id3").value = resultado;
+
+            }
+        }
+
+
+
+    </script>
+</body>
+</html>
